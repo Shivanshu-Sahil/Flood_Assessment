@@ -18,7 +18,10 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "echo 'Installation complete'",
+    "backend": "cd backend && python main.py",
+    "frontend": "npm run build && npm run start"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
