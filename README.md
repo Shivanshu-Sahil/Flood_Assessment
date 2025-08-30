@@ -1,8 +1,14 @@
 # 🌊 Flood Detection System
 
+<div align="center">
+
 A modern, AI-powered flood risk assessment system built with Next.js and FastAPI. Analyze flood risks using coordinates or image uploads with Gemini AI integration.
 
+![Screenshot](https://i.postimg.cc/mZFWtBXQ/Flood-Detection-System-Google-Chrome-30-08-2025-1-30-44-pm.png)
+
 ![Flood Detection System](https://img.shields.io/badge/status-active-brightgreen) ![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black) ![FastAPI](https://img.shields.io/badge/FastAPI-latest-green) ![Python](https://img.shields.io/badge/Python-3.13-blue)
+
+</div>
 
 ## ✨ Features
 
@@ -74,72 +80,14 @@ A modern, AI-powered flood risk assessment system built with Next.js and FastAPI
 
 ## 🔧 Configuration
 
-### Required API Keys
+### Required API Key
 
-1. **Gemini AI API Key** (Required)
+ **Gemini AI API Key** (Required)
    - Get from: https://makersuite.google.com/app/apikey
    - Add to `backend/.env`: `GEMINI_API_KEY=your_key_here`
 
-2. **Google Maps API Key** (Optional - for map features)
-   - Get from: https://console.cloud.google.com/
-   - Add to `.env.local`: `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_key_here`
 
-## 📁 Project Structure
-
-```
-flood-detection-system/
-├── app/                    # Next.js app directory
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Main application page
-├── backend/               # FastAPI backend
-│   ├── main.py           # FastAPI application
-│   ├── start.py          # Server startup script
-│   ├── requirements.txt  # Python dependencies
-│   └── .env.example      # Environment variables template
-├── components/           # React components
-│   └── ui/              # UI components (shadcn/ui)
-├── lib/                 # Utility functions
-├── public/              # Static assets
-├── .env.local.example   # Frontend environment template
-├── package.json         # Node.js dependencies
-└── README.md           # This file
-```
-
-## 🔄 API Endpoints
-
-### Coordinate Analysis
-```http
-POST /api/analyze/coordinates
-Content-Type: application/json
-
-{
-  "latitude": 40.7128,
-  "longitude": -74.0060
-}
-```
-
-### Image Analysis
-```http
-POST /api/analyze/image
-Content-Type: multipart/form-data
-
-file: [image file]
-```
-
-## 🛠️ Development
-
-### Frontend
-- **Framework**: Next.js 15.5.2 with TypeScript
-- **Styling**: Tailwind CSS + shadcn/ui
-- **State Management**: React hooks
-
-### Backend
-- **Framework**: FastAPI with Python 3.13
-- **AI Integration**: Google Gemini AI
-- **File Handling**: Python-multipart for image uploads
-
-## 📦 Dependencies
+## 🛠️ Development 
 
 ### Frontend
 - Next.js 15.5.2
@@ -176,24 +124,7 @@ file: [image file]
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-If you encounter any issues:
-
-1. Check the [API Documentation](http://localhost:8000/docs) when the backend is running
-2. Ensure all environment variables are properly set
-3. Verify your API keys are valid
-4. Check the console for error messages
-
-## 🔮 Future Enhancements
-
-- [ ] Interactive map integration
-- [ ] Historical flood data analysis
-- [ ] Multiple AI model support
-- [ ] Weather API integration
-- [ ] Real-time alerts system
-- [ ] Mobile app version
 
 ---
 
-Made with ❤️ for flood risk assessment and community safety.
+Made with ❤️ for community safety.
