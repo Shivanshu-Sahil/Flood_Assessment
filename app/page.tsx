@@ -79,7 +79,7 @@ export default function FloodDetectionSystem() {
   // const mapRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const API_BASE_URL = "http://localhost:8000";
+  const API_BASE_URL = "https://flood-assessment-1.onrender.com";
 
   // Initialize Google Maps - COMMENTED OUT FOR NOW
   // useEffect(() => {
